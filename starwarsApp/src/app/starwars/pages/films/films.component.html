@@ -1,0 +1,4 @@
+<div class="content" *ngFor="let film of films; let i=index">
+  <span>{{film.title}}</span> / <span>{{film.director}}</span> / <span>{{film.release_date}}</span>
+  <span class="moreDet"><b><a [routerLink]="['/films', i+1]">More Details</a></b></span>
+</div>

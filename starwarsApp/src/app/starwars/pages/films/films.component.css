@@ -1,0 +1,12 @@
+.content {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.moreDet{
+    margin-left: 30px;
+}
+
+a:active, :visited {
+    color: blue;
+}

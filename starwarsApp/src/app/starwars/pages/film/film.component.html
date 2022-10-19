@@ -1,0 +1,13 @@
+<div class="content" *ngIf="film">
+  <p>Title: <span>"{{film.title}}"</span></p>
+  <p>Episode_id: <span>{{film.episode_id}}</span></p>
+  <p>Opening_crawl: <span>"{{film.opening_crawl}}"</span></p>
+  <p>Director: <span>"{{film.director}}"</span></p>
+  <p>Producer: <span>"{{film.producer}}"</span></p>
+</div>
+<br>
+<div>
+  <button class="buttonColor" (click)="goBack()">
+    Back
+  </button>
+</div>

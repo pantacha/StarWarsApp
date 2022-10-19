@@ -1,0 +1,19 @@
+<div class="topnav"> 
+  <a>Search 1</a>
+  <a>Search 2</a>
+  <a>Search 3</a>
+  <div class="search-container">
+    <form (ngSubmit)="findItems()" autocomplete="off">
+      <input type="text" placeholder="Search.." name="search" [(ngModel)]="txtItem">
+        <button>
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+  </div>
+</div>
+<div *ngIf="items.length>0">
+  <ul class="container" *ngFor="let item of items" onkeyup="find(item)">
+    <li *ngIf="item.title">{{item.title}}</li>
+    <li *ngIf="item.name">{{item.name}}</li>
+  </ul>
+</div>

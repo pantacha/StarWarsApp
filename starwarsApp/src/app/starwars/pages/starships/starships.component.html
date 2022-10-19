@@ -1,0 +1,9 @@
+<div class="content" *ngFor="let item of starships">
+
+    <span>{{item.name}}</span> /
+    <span>{{item.manufacturer}}</span> /
+    <span *ngIf="item.length>'1000'">large</span>
+    <span *ngIf="(item.length>'100' && item.length<'1000')">normal</span>
+    <span *ngIf="item.length<'100'">small</span>
+
+</div>

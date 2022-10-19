@@ -1,0 +1,8 @@
+<div class="content" *ngFor="let item of people">
+  <span>{{item.name}}</span> / 
+  <span *ngIf="item.height>'200'">high</span>
+  <span *ngIf="item.height<'100'">low</span>
+  <span *ngIf="(item.height<'200' && item.height>'100')">normal</span>
+  /
+  <span>{{item.homeworld}}</span>
+</div>
